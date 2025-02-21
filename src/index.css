@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #FF69B4;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-black text-white;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(135deg, #FF69B4 0%, #FF8DC7 100%);
+}
+
+.btn-primary {
+  @apply bg-[#FF69B4] hover:bg-[#FF8DC7] text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply border-2 border-[#FF69B4] text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 hover:bg-[#FF69B4] transform hover:scale-105;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.fade-in {
+  @apply opacity-0 translate-y-10 transition-all duration-700;
+}
+
+.fade-in.visible {
+  @apply opacity-100 translate-y-0;
+}
