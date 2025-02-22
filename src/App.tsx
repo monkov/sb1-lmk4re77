@@ -2,10 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Dumbbell, Users, Brain, Trophy, Star, Clock, Shield, Target, ChevronDown } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
+import logoImg from './assets/logo.png';
 
 const Logo = () => (
   <img 
-    src="https://raw.githubusercontent.com/stackblitz/stackblitz-images/main/ma-program-logo.png" 
+    src={logoImg} 
     alt="MA Program"
     className="logo"
   />
